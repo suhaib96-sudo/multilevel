@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 class Employee(models.Model):
-    _inherit ='hr.employee'
+    _inherit ='x_bsnstrip'
 
     holidays_approvers = fields.One2many('hr.employee.holidays.approver', 'employee', string='Approvers chain')
     transfer_holidays_approvals_to = fields.Many2one('hr.employee', string='Transfer approval rights to')
