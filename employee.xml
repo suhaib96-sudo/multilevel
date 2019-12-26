@@ -3,9 +3,9 @@
 	<data>
 		<record id="view_employee_form" model="ir.ui.view">
 			<field name="name">hr.employee.form.inherit</field>
-			<field name="model">hr.employee</field>
+			<field name="model">x_bsnstrip</field>
 			<field name="type">form</field>
-			<field name="inherit_id" ref="hr.view_employee_form" />
+			<field name="inherit_id" ref="x_business.trip.form" />
 			<field name="arch" type="xml">
 				<notebook>
 					<page string="Holidays approvers chain" groups="hr.group_hr_user">
